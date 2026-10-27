@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de árboles</title>
+
+  <!-- Leaflet: la librería que dibuja el mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- MarkerCluster: agrupa puntos cuando están muy juntos -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+
+  <style>
+    /* El mapa ocupa toda la ventana */
+    html, body { height: 100%; margin: 0; }
+    #mapa { height: 100%; }
+
+    /* Símbolo del árbol: círculo con la miniatura de fondo (como en QGIS) */
+    .marker-foto {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      border: 3px solid #3b8ee0;
+      background-color: #7a9a6a;       /* color si no hay foto */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,.5);
+      transition: transform .15s, border-color .15s;
+    }
+    /* Al pasar el puntero, el círculo crece y cambia de color */
+    .marker-foto:hover { transform: scale(1.25); border-color: #ffb400; }
+
+    /* Tarjeta que aparece al pasar el puntero */
+    .tooltip-foto {
+      padding: 6px; border-radius: 10px; border: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,.4);
+    }
+    .tooltip-foto img { display: block; width: 260px; border-radius: 6px; }
+    .tooltip-foto b { display: block; margin-top: 6px; text-align: center; font: 600 14px sans-serif; }
+
+    /* Popup que aparece al hacer clic */
+    .popup-foto img { width: 300px; border-radius: 6px; }
+    .popup-foto h3 { margin: 6px 0 4px; font: 600 16px sans-serif; }
+    .popup-foto table { font: 13px sans-serif; }
+    .popup-foto td:first-child { font-weight: 600; padding-right: 8px; }
+  </style>
+</head>
+<body>
+  <div id="mapa"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script>
+    // ============ 1. CONFIGURACIÓN ============
+    // Si cambias nombres de archivos o carpetas, lo haces solo aquí.
+    const CONFIG = {
+      archivoArboles:    'datos/arboles.geojson',
+      archivoRecorridos: 'datos/recorridos.geojson',  // opcional: si no existe, se omite
+      campoNombre: 'nombre',    // columna con el nombre del árbol
+      campoFoto:   'foto',      // columna con el nombre del archivo de la foto
+      carpetaFotos: 'fotos/',   // fotos grandes (tarjeta y popup)
+      carpetaMini:  'fotos/mini/'  // miniaturas (símbolo en el mapa)
+    };
+
+    // ============ 2. CREAR EL MAPA ============
+    // setView([latitud, longitud], zoom). Luego se ajusta a tus árboles con fitBounds.
+    const mapa = L.map('mapa').setView([25.4303, -100.9518], 18);
+
+    // Mapa base de OpenStreetMap
+    const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(mapa);
+
+    // ============ 3. FUNCIONES AUXILIARES ============
+    // Evita que un texto con símbolos raros rompa el HTML
+    function esc(texto) {
+      return String(texto ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    }
+
+    // Etiqueta <img> solo si el árbol tiene foto (el Árbol 21 no tiene)
+    function imgHtml(archivo, carpeta) {
+      return archivo ? `<img src="${carpeta}${encodeURIComponent(archivo)}" loading="lazy">` : '';
+    }
+
+    // ============ 4. CAPA DE ÁRBOLES ============
+    async function cargarArboles() {
+      const datos = await (await fetch(CONFIG.archivoArboles)).json();
+
+      // El "cluster" agrupa árboles muy cercanos; al acercar el zoom se separan
+      const grupo = L.markerClusterGroup({ maxClusterRadius: 35 });
+
+      // L.geoJSON recorre cada árbol y llama a pointToLayer para dibujarlo
+      const capa = L.geoJSON(datos, {
+        pointToLayer: (feature, latlng) => {
+          const p = feature.properties;
+          const archivo = p[CONFIG.campoFoto];     // puede ser null
+
+          // Símbolo: un div redondo con la miniatura como fondo
+          const fondo = archivo
+            ? `background-image:url('${CONFIG.carpetaMini}${encodeURIComponent(archivo)}')`
+            : '';
+          const icono = L.divIcon({
+            className: '',
+            html: `<div class="marker-foto" style="${fondo}"></div>`,
+            iconSize: [44, 44]
+          });
+          const marcador = L.marker(latlng, { icon: icono, title: p[CONFIG.campoNombre] });
+
+          // Tarjeta al pasar el puntero (hover): foto grande + nombre
+          marcador.bindTooltip(
+            `${imgHtml(archivo, CONFIG.carpetaFotos)}<b>${esc(p[CONFIG.campoNombre])}</b>`,
+            { direction: 'top', offset: [0, -24], opacity: 1, className: 'tooltip-foto' }
+          );
+
+          // Popup al hacer clic: foto + tabla con los demás datos (sin los vacíos)
+          const filas = Object.entries(p)
+            .filter(([campo, valor]) => campo !== CONFIG.campoFoto && campo !== CONFIG.campoNombre && valor)
+            .map(([campo, valor]) => `<tr><td>${esc(campo)}</td><td>${esc(valor)}</td></tr>`)
+            .join('');
+          marcador.bindPopup(
+            `<div class="popup-foto">
+               ${imgHtml(archivo, CONFIG.carpetaFotos)}
+               <h3>${esc(p[CONFIG.campoNombre])}</h3>
+               <table>${filas}</table>
+             </div>`,
+            { maxWidth: 320 }
+          );
+
+          return marcador;
+        }
+      });
+
+      grupo.addLayer(capa);
+      grupo.addTo(mapa);
+      mapa.fitBounds(grupo.getBounds().pad(0.15));   // encuadra el mapa a tus árboles
+      return grupo;
+    }
+
+    // ============ 5. CAPA DE RECORRIDOS (opcional) ============
+    async function cargarRecorridos() {
+      try {
+        const datos = await (await fetch(CONFIG.archivoRecorridos)).json();
+        return L.geoJSON(datos, { style: { color: '#e63946', weight: 3 } }).addTo(mapa);
+      } catch (e) {
+        return null;   // no hay recorridos todavía: se omite la capa
+      }
+    }
+
+    // ============ 6. ARRANQUE ============
+    (async () => {
+      const arboles = await cargarArboles();
+      const recorridos = await cargarRecorridos();
+
+      // Control para prender y apagar capas
+      const overlays = { 'Árboles': arboles };
+      if (recorridos) overlays['Recorridos'] = recorridos;
+      L.control.layers({ 'OpenStreetMap': osm }, overlays).addTo(mapa);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,933 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 1",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180519686.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95266776999999,
+     25.430297349999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 2",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180554797.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95261106999997,
+     25.430263920000005
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 3",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180617517.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95259083,
+     25.430304929999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 4",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180646339.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95253628999997,
+     25.430309129999994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 5",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180709422.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95250938,
+     25.430289859999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 6",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180750494.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.9524844,
+     25.4302997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 7",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180812273.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95244430999998,
+     25.430288349999998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 8",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180832638.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95244667999998,
+     25.43027766
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 9",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180859666.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.9523772,
+     25.430283909999993
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 10",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919180918264.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95233786999998,
+     25.430329079999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 11",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181003912.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95230082999998,
+     25.43029725
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 12 mesquite",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181035736.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95227413999999,
+     25.430336089999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 13",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181050970.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95224318,
+     25.430299109999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 14",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181137456.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95201872999999,
+     25.43039716
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 15",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181202501.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95205466999997,
+     25.43044807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 16",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181227300.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95205213,
+     25.43051793
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 17",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181249765.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95201584,
+     25.4305757
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 18",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181311982.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95195999,
+     25.43061065999999
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 19",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181334358.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95186244,
+     25.430601379999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 20",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181402794.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95178832,
+     25.43056509
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 21",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": null
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95174727999999,
+     25.43050986
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 22",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181625295.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95174301999997,
+     25.4305274
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 23",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181652365.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95173356999999,
+     25.430467129999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 24",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181717576.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95176308,
+     25.430373289999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 25",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181736904.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95182756,
+     25.43031806
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 27",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181816707.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95192079,
+     25.430301859999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 28",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919181844872.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95201667999997,
+     25.430321729999992
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 29",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182038211.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95153990999997,
+     25.430455049999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 30",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182101103.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95152288,
+     25.430407609999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 31",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182123453.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95149419,
+     25.43043979
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 32",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182145390.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95143622,
+     25.43040532
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 33",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182205228.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95143095,
+     25.430468159999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 34",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182224092.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95138271,
+     25.430439620000005
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 35",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182243666.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95136988999998,
+     25.430456959999994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 36",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182305469.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95133068,
+     25.43042136
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 37",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182323146.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95131834,
+     25.430448479999992
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 38",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182340854.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95128806,
+     25.430424250000005
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 39",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182400131.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95125676,
+     25.43045773
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 40",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182429058.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95128444,
+     25.430358319999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 41",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182511093.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95124123,
+     25.43033426999999
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 42",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182525218.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95125434000002,
+     25.43042821
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 44",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182550195.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95119563,
+     25.430472139999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 45",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182607584.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95117169999999,
+     25.4304515
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 46",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182621538.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95115143,
+     25.43048456
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 47",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182645679.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95111576999999,
+     25.430458
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 48",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182732730.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95108869,
+     25.43047851
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 49",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182756858.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95104756999997,
+     25.430463359999994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 50",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182812195.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95103597999997,
+     25.430485899999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 51",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182830489.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95098197,
+     25.430463310000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 52",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182855968.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.9509615,
+     25.430503159999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 53",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182914238.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95092478,
+     25.430461899999997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 54",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182932255.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95090539999997,
+     25.430508750000005
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 55",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919182953044.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95087218000002,
+     25.430478120000007
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 55",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919183132575.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95089396517865,
+     25.43032506549138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 56",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919183155274.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95089396517865,
+     25.43032506549138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 57",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919183214608.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95089396517865,
+     25.43032506549138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 58",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919183235465.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95089396517865,
+     25.43032506549138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Árbol 59",
+    "nota": null,
+    "fecha": "2026-09-19",
+    "foto": "JPEG_20260919183302387.jpg"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.95089396517865,
+     25.43032506549138
+    ]
+   }
+  }
+ ]
+}
